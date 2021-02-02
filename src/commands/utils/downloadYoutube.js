@@ -43,7 +43,7 @@ export default function downloadYoutube(videoId, outputPath, prefix, title) {
     }
 
     // start youtube download
-    const ytVideoQualities = ['140', '137'];
+    const ytVideoQualities = ['best', '22', '18', '136+140', '135+140', '134+140', '133+140', '160+140', ''];
     for (let i = 0; i < ytVideoQualities.length; i += 1) {
       try {
         // eslint-disable-next-line no-use-before-define
