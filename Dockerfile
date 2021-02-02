@@ -40,8 +40,8 @@ RUN node -v
 RUN npm -v
 
 # install Udacimak
-RUN npm i -g udacimak
+RUN npm i -g git+https://github.com/yurivalicelle/udacimak.git
 # confirm install
-RUN udacimak --help
+# RUN udacimak --help
 
 ENTRYPOINT [ "udacimak" ]
