@@ -39,8 +39,9 @@ RUN npm config set unsafe-perm true
 RUN node -v
 RUN npm -v
 
+COPY ./ ./udacimak
 # install Udacimak
-RUN npm i -g git+https://github.com/yurivalicelle/udacimak.git
+RUN npm i -g ./udacimak
 # confirm install
 # RUN udacimak --help
 
